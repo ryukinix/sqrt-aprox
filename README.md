@@ -45,5 +45,5 @@ GPL License
   - [X] Struct of algorithm and basic ideas to implement
   - [ ] Construct the function in C to return the form square root factored 
   - [ ] Implementation of a serie convenient
-  - [ ] Test series of your convergente in n input
+  - [ ] Test series of your convergence in n input
   - [ ] Do the tests of we loved teacher wants
