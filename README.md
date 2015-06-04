@@ -43,7 +43,7 @@ GPL License
 
 ## Roadmap:
   - [X] Struct of algorithm and basic ideas to implement
-  - [ ] Construct the function in C to return the form square root factored 
+  - [X] Construct the function in C to return the form square root factored 
   - [ ] Implementation of a serie convenient
   - [ ] Test series of your convergence in an input
   - [ ] Do the tests that our **beloved** professor wants (error estimative)
