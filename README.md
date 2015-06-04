@@ -26,7 +26,7 @@ In ording:
 
 ## History
 
-We have a problem with the diverge output results of input values *n > 2*. It's frustating. For it, the focus of the problem will be to restrict input to a fix value (z = 50) and after that transform it in: z -> k(1 + x)^(1/2). In other words, we need factoring sqrt(50) -> 5*sqrt(2)! Some things were made in Python for prototype the solution, but the implementation mission is in C ANSI!
+We have a problem with the diverge output results of input values *n > 2*. It's frustating. For it, the focus of the problem will be to restrict the input a fix value (z = 50) and after that transform it in: z -> *k(1 + x)^(1/2)*. In other words, we need factoring sqrt(50) -> 5*sqrt(2)! Some things were made in Python for prototype the solution, but the implementation mission is in C ANSI!
 
 ## Credits
 
