@@ -8,8 +8,8 @@ The coding focus is a implementation in C of heuristic solution using p-series t
 ![Series](series.png)
 
 
-In ording:
-  * _(I)_ Is the myself serie whose i found with the my hands before an odd notice... (was not necessary)
+In order:
+  * _(I)_ My own serie whose i found with my hands before an odd notice... (was not necessary) (Manoel Spoke)
   * _(II)_ The serie than Prof. Sávio give us and Gabriel it's not a her fan
   * _(III)_ The second serie aproximation we see in [Wolfram](http://www.wolframalpha.com/input/?i=sqrt%28x%29)
 
@@ -46,4 +46,4 @@ GPL License
   - [ ] Construct the function in C to return the form square root factored 
   - [ ] Implementation of a serie convenient
   - [ ] Test series of your convergence in an input
-  - [ ] Do the tests than our loved teacher wants
+  - [ ] Do the tests that our **beloved** teacher wants (error estimative)
