@@ -5,13 +5,13 @@ The coding focus is a implementation in C of heuristic solution using p-series t
 
 ## Some series to inspiring the code (series to do that aproximation)
 
-[Series](series.png)
+![Series](series.png)
 
 
 In ording:
   * _(I)_ Is the myself serie whose i found with the my hands before an odd notice... (was not necessary)
   * _(II)_ The serie than Prof. Sávio give us and Gabriel it's not a her fan
-  * _(III)_ The second serie aproximation we see in (Wolfram)[http://www.wolframalpha.com/input/?i=sqrt%28x%29]
+  * _(III)_ The second serie aproximation we see in [Wolfram](http://www.wolframalpha.com/input/?i=sqrt%28x%29)
 
 ==
 ## Contributing
@@ -21,6 +21,7 @@ In ording:
 3. Commit your changes: `git commit -am 'Add some feature'`
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
+
 ==
 
 ## History
@@ -41,7 +42,8 @@ Contributors:
 GPL License
 
 ## Roadmap:
-  - [] Construct the function in C to return the form square root factored 
-  - [] Implementation of a serie convenient
-  - [] Test series of your convergente in n input
-  - [] Do the tests of we loved teacher wants
+  - [X] Struct of algorithm and basic ideas to implement
+  - [ ] Construct the function in C to return the form square root factored 
+  - [ ] Implementation of a serie convenient
+  - [ ] Test series of your convergente in n input
+  - [ ] Do the tests of we loved teacher wants
