@@ -48,4 +48,5 @@ GPL License
   - [X] Implementation of a serie convenient (i did implement three!)
   - [X] Test series of your convergence in an input (the prototype of tests was made)
   - [X] Do the tests that our **beloved** professor wants (error estimative)
+  - [ ] Discover the bug-enigma in implementation on C of the three series divergence.
   - [ ] Fix the divergence of the series in implementation (some thing is wrong! It's not possible...)
