@@ -12,12 +12,12 @@ long fact(int n){
 		return n * fact(n - 1);
 }
 
-double rising_fact(int x, int n){
+double rising_fact(double x, int n){
 	int k;
-	double productory;
+	double productory = 1;
 	
-	for(k = 0; k <= n + 1; k++)
-		productory *= (k + x);
+	for(k = 0; k < n; k++)
+		productory *= (x + k);
 
 	return productory;
 
@@ -42,8 +42,8 @@ double man_serie(double x){
 		long denominator = pow(2, n) * fact(n);
 
 		double slice = (sign * productory * pot)/denominator;
-
-		printf("Slice %d: %lf <=> (%d * %lf * %lf) / %li\n " , \
+		//debug
+		printf("Slice %d: %lf <=> (%d * %lf * %lf) / %li\n" , \
 			n, slice, sign, productory, pot, denominator);
 
 		accumulator += slice;
@@ -69,8 +69,9 @@ double sav_serie(double x){
 		long denominator = fact(n);
 
 		double slice = (productory * pot)/denominator;
-
-		printf("Slice %d: %lf\n", n, slice);
+		//debug
+		printf("Slice %d: %lf <=> (* %lf * %lf) / %li\n", \
+			n, slice, productory, pot, denominator);
 
 		accumulator += slice;
 	}
@@ -80,13 +81,13 @@ double sav_serie(double x){
 
 double wolf_serie(double x){
 	int n;
-	double accumulator = 1, productory = 1;
+	double accumulator = 0, productory = 1;
 	int sign = 1;
 
-	for(n = 1; n <= SLICES; n++){
+	for(n = 0; n <= SLICES; n++){
 		sign = pow(-1, n);
 		
-		productory = rising_fact(x, n);
+		productory = rising_fact(-0.5, n);
 		
 		double pot = pow((x - 1), n);
 
@@ -94,7 +95,9 @@ double wolf_serie(double x){
 
 		double slice = (sign * productory * pot)/denominator;
 
-		printf("Slice %d: %lf\n", n, slice);
+		//debug
+		printf("Slice %d: %lf <=> (%d * %lf * %lf) / %li\n", \
+			n, slice, sign, productory, pot, denominator);
 
 		accumulator += slice;
 	}
