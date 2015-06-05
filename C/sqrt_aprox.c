@@ -43,7 +43,8 @@ double man_serie(double x){
 
 		double slice = (sign * productory * pot)/denominator;
 
-		printf("Slice %d: %lf <=> (%d * %lf * %lf) / %li\n " , n, slice, sign, productory, pot, denominator);
+		printf("Slice %d: %lf <=> (%d * %lf * %lf) / %li\n " , \
+			n, slice, sign, productory, pot, denominator);
 
 		accumulator += slice;
 
@@ -135,9 +136,7 @@ void out_print(int z, double our_value){
 	error = abs(our_value - std_value);
 
 	printf("Our sqrt(%d): %lf\nStandard sqrt(%d): %lf\nError: %lf\n", \
-													z, our_value,\
-													z, std_value,\
-													error );
+         	       z, our_value,	   z, std_value,        error );
 
 }
 
