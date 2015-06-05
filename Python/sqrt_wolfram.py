@@ -1,3 +1,4 @@
+from __future__ import division
 from functools import reduce
 from math import sqrt
 from sys import argv
@@ -33,7 +34,7 @@ def sqrt_(x):
 	return total
 
 
-test = int(argv[1])
+test = int(2)
 
 aprox = sqrt_(test)
 stand = sqrt(test)
