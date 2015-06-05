@@ -46,4 +46,5 @@ GPL License
   - [X] Construct the function in C to return the form square root factored 
   - [X] Implementation of a serie convenient (i did implement three!)
   - [X] Test series of your convergence in an input (the prototype of tests was made)
-  - [ ] Do the tests that our **beloved** professor wants (error estimative)
+  - [X] Do the tests that our **beloved** professor wants (error estimative)
+  - [ ] Fix the divergence of the series in implementation (some thing is wrong! It's not possible...)
