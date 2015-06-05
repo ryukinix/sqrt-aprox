@@ -14,7 +14,7 @@ In order:
   * _(III)_ The second serie aproximation we see in [Wolfram](http://www.wolframalpha.com/input/?i=sqrt%28x%29) [*1*]
 
 Ps.:
-1. Here is a documentation about of rising factorial, whose the notation of *Pochhammer* for denotate in serie (III): [*rising-factorial*](http://mathworld.wolfram.com/PochhammerSymbol.html)
+1. Here is a documentation about of rising factorial, whose the notation of *Pochhammer* for denotate in serie (III): [*Pochhammer Symbol*](http://mathworld.wolfram.com/PochhammerSymbol.html)
 
 ## Contributing
 
@@ -27,7 +27,7 @@ Ps.:
 
 ## History
 
-We have a problem with the diverge output results of input values *n > 2*. It's frustating. For it, the focus of the problem will be to restrict the input a fix value (z = 50) and after that transform it in: _z^(1/2) -> *k(1 + x)^(1/2)_. In other words, we need factoring sqrt50) -> 5*sqrt(2)! Some things were made in Python for prototype the solution, but the implementation mission is in C ANSI!
+We have a problem with the diverge output results of input values *n > 2*. It's frustating. For it, the focus of the problem will be to restrict the input a fix value *z = 50* and after that transform it in: _**z**^(1/2) -> **k**(1 + **x**)^(1/2)_. In other words, we need factoring _sqrt(50) -> 5*sqrt(2)!_ Some things were made in Python for prototype the solution, but the implementation mission is in C ANSI!
 
 ## Credits
 
@@ -36,7 +36,8 @@ Contributors:
   * Gabriel Giordano
   * Janderson Souza
   * Núria Rocha
-  * Other Peoples in Soon
+  * Júliana Azevedo
+  * Jeanderson Oliveira  
 
 ## License
 
@@ -49,4 +50,7 @@ GPL License
   - [X] Test series of your convergence in an input (the prototype of tests was made)
   - [X] Do the tests that our **beloved** professor wants (error estimative)
   - [ ] Discover the bug-enigma in implementation on C of the three series divergence.
-  - [ ] Fix the divergence of the series in implementation (some thing is wrong! It's not possible...)
+    - [ ] Fix the (I) serie implementation -> *man_serie()*
+    - [ ] Fix the (II) serie implementation -> *sav_serie()*
+    - [X] Fix the (III) serie implementation -> *wolf_serie()*
+  - [ ] Fix all the divergence of the series in implementation!!!
