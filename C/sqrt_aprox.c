@@ -60,9 +60,9 @@ double sav_serie(double x){
 
 	for(n = 1; n <= SLICES; n++){
 		
-		int m;
-		for(m = 0; m <= n + 1; m++)
-			productory *= (m - x);
+		int k;
+		for(k = 0; k <= n + 1; k++)
+			productory *= (0.5 - k);
 		
 		double pot = pow(x, n);
 
