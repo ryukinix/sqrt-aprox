@@ -44,15 +44,7 @@ int factor(int x, int *inside, int *outside){
 	return 0;
 }
 
-
-
-int main(){
-	int value, outside  = 1, inside = 1;
-	scanf("%d", &value);
-
-	int status = factor(value, &inside, &outside);
-
-	//Output
+void output_print(int value, int status, int inside, int outside){
 	if (status == -1)
 		printf("%d is prime\n", value);
 	else if (outside == 1)
@@ -62,6 +54,18 @@ int main(){
 	else
 		printf("    __\n%d \\/%d\n", outside, inside/outside);
 	
+}
 
+/*
+
+int main(){
+	int value, outside  = 1, inside = 1;
+	scanf("%d", &value);
+
+	int status = factor(value, &inside, &outside);
+
+	output_print(value, status, inside, outside)
+	
 	return 0;
 }
+*/
