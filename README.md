@@ -1,6 +1,6 @@
 # sqrt-aprox
 
-__*Abstract*__: The coding focus is a implementation in C of heuristic solution using p-series to evaluate f(x) = sqrt(x). All this is for a college engineer project.
+__*Abstract*__: The coding focus is a implementation in C of heuristics solutions using p-series to evaluate _f(x) = sqrt(x)_. All this is for a college engineer project.
 
 
 ## Some series to inspiring the code (series to do that aproximation)
@@ -8,13 +8,16 @@ __*Abstract*__: The coding focus is a implementation in C of heuristic solution 
 ![Series](series.png)
 
 
-In order:
+In order the series:
   * _(I)_ My own serie whose i found with my hands before an odd notice... (was not necessary)
-  * _(II)_ The serie than Prof. Sávio give us and Gabriel it's not a her fan
-  * _(III)_ The second serie aproximation we see in [Wolfram](http://www.wolframalpha.com/input/?i=sqrt%28x%29) [*1*]
+  * _(II)_ The serie than Prof. Sávio give us and Gabriel it's not a her fan [*1*]
+  * _(III)_ The second serie aproximation we see in [Wolfram](http://www.wolframalpha.com/input/?i=sqrt%28x%29) [*2*]
 
-Ps.:
-1. Here is a documentation about of rising factorial, whose the notation of *Pochhammer* for denotate in serie (III): [*Pochhammer Symbol*](http://mathworld.wolfram.com/PochhammerSymbol.html)
+# Observations
+==
+  * Here is a documentation about of rising factorial, whose the notation of *Pochhammer* for denotate in serie (II) and (III): [*Pochhammer Symbol*](http://mathworld.wolfram.com/PochhammerSymbol.html)
+    1. (II)  [*Falling Factorial*](http://mathworld.wolfram.com/RisingFactorial.html)
+    2. (III) [*Rising Factorial*](http://mathworld.wolfram.com/FallingFactorial.html)
 
 ## Contributing
 
@@ -27,13 +30,13 @@ Ps.:
 
 ## History
 
-We have a problem with the diverge output results of input values *n > 2*. It's frustating. For it, the focus of the problem will be to restrict the input a fix value *z = 50* and after that transform it in: _**z**^(1/2) -> **k**(1 + **x**)^(1/2)_. In other words, we need factoring _sqrt(50) -> 5*sqrt(2)!_ Some things were made in Python for prototype the solution, but the implementation mission is in C ANSI!
+We have a problem with the diverge output results of input values __**n** > 2__. It's frustating. For it, the focus of the problem will be to restrict the input a fix value _**z** = 50_ and after that transform it in: _**z**^(1/2) -> **k**(1 + **x**)^(1/2)_. In other words, we need factoring _√50 -> 5√2!_ some things were made in Python for prototype the solution, but the implementation mission is in C ANSI!
 
 ## Credits
 
 Contributors:
   * Me (Manoel Vilela)
-  * Gabriel Giordano
+  * Gabriel Giordano (guest)
   * Janderson Souza
   * Núria Rocha
   * Júliana Azevedo
@@ -51,6 +54,6 @@ GPL License
   - [X] Do the tests that our **beloved** professor wants (error estimative)
   - [ ] Discover the bug-enigma in implementation on C of the three series divergence.
     - [ ] Fix the (I) serie implementation -> *man_serie()*
-    - [ ] Fix the (II) serie implementation -> *sav_serie()*
+    - [X] Fix the (II) serie implementation -> *sav_serie()*
     - [X] Fix the (III) serie implementation -> *wolf_serie()*
-  - [ ] Fix all the divergence of the series in implementation!!!
+  - [ ] Fix all the divergence of the series in implementation!
