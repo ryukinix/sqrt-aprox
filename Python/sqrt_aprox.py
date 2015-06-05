@@ -9,8 +9,12 @@ f = lambda x: reduce(lambda a,b:a*b, [i for i in range(1, x + 1)] + [1])
 p_impar = lambda x: reduce(lambda a, b: a*b, (abs(2*k + 1) for k in range(-1, x-1)))
 #aproximação da raiz quadrada usando expansão da série de taylor
 expr1 = lambda x, n: float((((-1)**(int(n)+1))*((x - 1)**n)*p_impar(int(n)))/((2.0**n)*f(int(n))))  #preciso revisar, alguma expressão estar errada
+#pices
+slices = lambda x: [expr1(float(x), float(n)) for n in range(1, 7)]
+for i in slices(2):
+	print(i)
 
-sqrt_ = lambda x: 1 + sum([expr1(float(x), float(n)) for n in range(1, 7)]) #funciona que é uma maravilha para o número 2.
+sqrt_ = lambda x: 1 + sum(slices(x)) #funciona que é uma maravilha para o número 2.
 i = 2
 print("my: √%d = %2.10f" %(i, sqrt_(i)))
 print("python: √%d = %2.10f" %(i, sqrt(i)))
