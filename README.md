@@ -1,6 +1,6 @@
 # sqrt-aprox
 
-The coding focus is a implementation in C of heuristic solution using p-series to evaluate f(x) = sqrt(x). All this is for a college engineer project.
+__*Abstract*__: The coding focus is a implementation in C of heuristic solution using p-series to evaluate f(x) = sqrt(x). All this is for a college engineer project.
 
 
 ## Some series to inspiring the code (series to do that aproximation)
@@ -11,9 +11,11 @@ The coding focus is a implementation in C of heuristic solution using p-series t
 In order:
   * _(I)_ My own serie whose i found with my hands before an odd notice... (was not necessary)
   * _(II)_ The serie than Prof. Sávio give us and Gabriel it's not a her fan
-  * _(III)_ The second serie aproximation we see in [Wolfram](http://www.wolframalpha.com/input/?i=sqrt%28x%29)
+  * _(III)_ The second serie aproximation we see in [Wolfram](http://www.wolframalpha.com/input/?i=sqrt%28x%29) [*1*]
 
-==
+Ps.:
+1. Here is a documentation about of rising factorial, whose the notation of *Pochhammer* for denotate in serie (III): [*rising-factorial*](http://mathworld.wolfram.com/PochhammerSymbol.html)
+
 ## Contributing
 
 1. Fork it!
@@ -22,11 +24,10 @@ In order:
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
 
-==
 
 ## History
 
-We have a problem with the diverge output results of input values *n > 2*. It's frustating. For it, the focus of the problem will be to restrict the input a fix value (z = 50) and after that transform it in: z -> *k(1 + x)^(1/2)*. In other words, we need factoring sqrt(50) -> 5*sqrt(2)! Some things were made in Python for prototype the solution, but the implementation mission is in C ANSI!
+We have a problem with the diverge output results of input values *n > 2*. It's frustating. For it, the focus of the problem will be to restrict the input a fix value (z = 50) and after that transform it in: _z^(1/2) -> *k(1 + x)^(1/2)_. In other words, we need factoring sqrt50) -> 5*sqrt(2)! Some things were made in Python for prototype the solution, but the implementation mission is in C ANSI!
 
 ## Credits
 
