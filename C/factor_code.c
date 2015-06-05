@@ -15,8 +15,8 @@ int factor(int x, int *inside, int *outside){
 	
 	if (isprime(x) != 1){
 		while (x != 1){
-			if (x % prime == 0)
-				printf("%d\t| %d\n", x, prime);
+			// if (x % prime == 0) (debug)
+			// 	printf("%d\t| %d\n", x, prime);
 		
 			if (x % prime == 0){
 				x /= prime;
@@ -36,7 +36,8 @@ int factor(int x, int *inside, int *outside){
 			if(tmp == 1)
 				*inside *= prime;
 		}
-		printf("%d\t| /\n\n", x);
+		*inside /= *outside;
+		//printf("%d\t| /\n\n", x); (debug)
 	}
 	else
 		return -1;
@@ -49,10 +50,10 @@ void output_print(int value, int status, int inside, int outside){
 		printf("%d is prime\n", value);
 	else if (outside == 1)
 		printf("%d not possible to factor\n", inside);
-	else if (inside/outside == 1)
+	else if (inside == 1)
 		printf("Sqrt of %d = %d\n", value, outside);
 	else
-		printf("    __\n%d \\/%d\n", outside, inside/outside);
+		printf("    __\n%d \\/%d\n", outside, inside);
 	
 }
 
