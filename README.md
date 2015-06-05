@@ -9,7 +9,7 @@ The coding focus is a implementation in C of heuristic solution using p-series t
 
 
 In order:
-  * _(I)_ My own serie whose i found with my hands before an odd notice... (was not necessary) (Manoel Spoke)
+  * _(I)_ My own serie whose i found with my hands before an odd notice... (was not necessary)
   * _(II)_ The serie than Prof. Sávio give us and Gabriel it's not a her fan
   * _(III)_ The second serie aproximation we see in [Wolfram](http://www.wolframalpha.com/input/?i=sqrt%28x%29)
 
