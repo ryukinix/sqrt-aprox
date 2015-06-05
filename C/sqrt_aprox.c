@@ -20,9 +20,17 @@ double rising_fact(double x, int n){
 		productory *= (x + k);
 
 	return productory;
-
 }
 
+double falling_fact(double x, int n){
+	int k;
+	double productory = 1;
+	
+	for(k = 0; k < n; k++)
+		productory *= (x - k);
+
+	return productory;
+}
 
 double man_serie(double x){
 	int n;
@@ -30,7 +38,6 @@ double man_serie(double x){
 	int sign = 1;
 
 	for(n = 1; n <= SLICES; n++){
-
 		sign = pow(-1, n + 1);
 		
 		int k;
@@ -138,7 +145,7 @@ void out_print(int z, double our_value){
 	std_value = sqrt(z);
 	error = abs(our_value - std_value);
 
-	printf("Our sqrt(%d): %lf\nStandard sqrt(%d): %lf\nError: %lf\n", \
+	printf("Our sqrt(%d): %.8lf\nStandard sqrt(%d): %.8lf\nError: %.8lf\n", \
          	       z, our_value,	   z, std_value,        error );
 
 }
