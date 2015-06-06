@@ -118,8 +118,10 @@ double sqrt_(double z, int num){
 	double heuristic;
 
 	factor(z, &x, &k);
-	printf("z = %lf | k = %d | x = %d <=> z^(1/2) = %dV%d\n\n", z, k, x, k, x);
+	puts("-->Input!\n");
+	printf("z = %lf => k = %d | x = %d <=> z^(1/2) = %dV%d\n\n", z, k, x, k, x);
 	
+	puts("-->Processing!\n");
 	switch(num){
 		case 1:
 			heuristic = man_serie(x);
@@ -142,9 +144,10 @@ void out_print(int z, double our_value){
 	double error, std_value;
 
 	std_value = sqrt(z);
-	error = our_value - std_value;
+	error = std_value - our_value;
 
-	printf("Our sqrt(%d): %.10lf\nStandard sqrt(%d): %.10lf\nError: %.10lf\n", \
+	puts("\n--> Results!");
+	printf("\nOur sqrt(%d): %.10lf\nStandard sqrt(%d): %.10lf\nError: %.10lf\n", \
          	       z, our_value,	   z, std_value,        error );
 
 }
