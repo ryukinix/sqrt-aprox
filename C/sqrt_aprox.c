@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <math.h>
 #include "declarations.h"
-#define SLICES 7
+#define SLICES 8
 
 
 long fact(int n){
@@ -33,8 +33,8 @@ double falling_fact(double x, int n){
 }
 
 double man_serie(double x){
-	int n;
-	double accumulator = 1, productory = 1;
+	int n, k;
+	double accumulator = 1, productory;
 	int sign = 1;
 
 	for(n = 1; n <= SLICES; n++){
@@ -44,9 +44,10 @@ double man_serie(double x){
 
 		long denominator = pow(2, n) * fact(n);
 
-		int k;
-		for(k = -1; k < n - 1; k++)
-			productory *= abs((2*k) + 1);
+		productory = 1;
+		for(k = -1; k < n - 1; k++){
+			productory = productory * abs((2*k) + 1);
+		}
 		
 
 		double slice = (sign * productory * pot)/denominator;
@@ -143,7 +144,7 @@ void out_print(int z, double our_value){
 	std_value = sqrt(z);
 	error = our_value - std_value;
 
-	printf("Our sqrt(%d): %.8lf\nStandard sqrt(%d): %.8lf\nError: %.8lf\n", \
+	printf("Our sqrt(%d): %.10lf\nStandard sqrt(%d): %.10lf\nError: %.10lf\n", \
          	       z, our_value,	   z, std_value,        error );
 
 }
