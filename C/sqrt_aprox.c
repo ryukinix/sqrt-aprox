@@ -12,24 +12,24 @@ long fact(int n){
 		return n * fact(n - 1);
 }
 
-double rising_fact(double x, int n){
+
+double pochhammer_func(double x, int n, int sign){
 	int k;
 	double productory = 1;
 	
 	for(k = 0; k < n; k++)
-		productory *= (x + k);
+		productory *= (x + k*sign);
 
-	return productory;
+	return productory;	
+}
+
+
+double rising_fact(double x, int n){
+	return pochhammer_func(x, n, 1);
 }
 
 double falling_fact(double x, int n){
-	int k;
-	double productory = 1;
-	
-	for(k = 0; k < n; k++)
-		productory *= (x - k);
-
-	return productory;
+	return pochhammer_func(x, n, -1);
 }
 
 double man_serie(double x){
@@ -40,13 +40,14 @@ double man_serie(double x){
 	for(n = 1; n <= SLICES; n++){
 		sign = pow(-1, n + 1);
 		
-		int k;
-		for(k = -1; k < n - 1; k++)
-			productory *= abs(2*k + 1);
-		
 		double pot = pow((x - 1), n);
 
 		long denominator = pow(2, n) * fact(n);
+
+		int k;
+		for(k = -1; k < n - 1; k++)
+			productory *= abs((2*k) + 1);
+		
 
 		double slice = (sign * productory * pot)/denominator;
 		//debug
@@ -66,10 +67,7 @@ double sav_serie(double x){
 	double accumulator = 1, productory = 1;
 
 	for(n = 1; n <= SLICES; n++){
-		
-		int k;
-		for(k = 0; k <= n + 1; k++)
-			productory *= (0.5 - k);
+		productory = falling_fact(0.5, n);
 		
 		double pot = pow(x, n);
 
@@ -143,7 +141,7 @@ void out_print(int z, double our_value){
 	double error, std_value;
 
 	std_value = sqrt(z);
-	error = abs(our_value - std_value);
+	error = our_value - std_value;
 
 	printf("Our sqrt(%d): %.8lf\nStandard sqrt(%d): %.8lf\nError: %.8lf\n", \
          	       z, our_value,	   z, std_value,        error );
