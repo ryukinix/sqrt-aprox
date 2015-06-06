@@ -51,8 +51,8 @@ GPL License
   - [X] Implementation of a serie convenient (i did implement three!)
   - [X] Test series of your convergence in an input (the prototype of tests was made)
   - [X] Do the tests that our **beloved** professor wants (error estimative)
-  - [ ] Discover the bug-enigma in implementation on C of the three series divergence.
-    - [ ] Fix the (I) serie implementation -> *man_serie()*
+  - [X] Discover the bug-enigma in implementation on C of the three series divergence.
+    - [X] Fix the (I) serie implementation -> *man_serie()*
     - [X] Fix the (II) serie implementation -> *sav_serie()*
     - [X] Fix the (III) serie implementation -> *wolf_serie()*
-  - [ ] Fix all the divergence of the series in implementation!
+  - [X] Fix all the divergence of the series in implementation!
