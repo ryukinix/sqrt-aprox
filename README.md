@@ -11,7 +11,7 @@ __*Abstract*__: The coding focus is a implementation in C of heuristics solution
 In order the series:
   * _(I)_ My own serie whose i found with my hands before an odd notice... (was not necessary)
   * _(II)_ The serie than Prof. Sávio give us and Gabriel it's not a her fan [*1*]
-  * _(III)_ The second serie aproximation we see in platform of mathematics [wolfram](http://www.wolframalpha.com/input/?i=sqrt%28x%29) ! [*2*]
+  * _(III)_ The second serie aproximation we see in platform of mathematics [wolfram](http://www.wolframalpha.com/share/clip?f=d41d8cd98f00b204e9800998ecf8427ek7hsa4aeht) ! [*2*]
 
 ##  Observations
   * Here is a documentation about of rising factorial, whose the notation of *Pochhammer* for denotate in serie (II) and (III): [*Pochhammer Symbol*](http://mathworld.wolfram.com/PochhammerSymbol.html)
