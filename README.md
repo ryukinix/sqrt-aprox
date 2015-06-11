@@ -9,7 +9,7 @@ __*Abstract*__: The coding focus is a implementation in C of heuristics solution
 
 
 In order the series:
-  * _(I)_ My own series whose i found with my hands before an odd notice... (was not necessary)
+  * _(I)_ My own series whose i found with my hands before an odd notice... (would not necessary)
   * _(II)_ The series than Prof. Sávio give us and Gabriel it's not a her fan [*1*]
   * _(III)_ The second series approximation we see in platform of mathematics [wolfram](http://www.wolframalpha.com/share/clip?f=d41d8cd98f00b204e9800998ecf8427ek7hsa4aeht) ! [*2*]
 

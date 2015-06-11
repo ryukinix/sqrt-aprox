@@ -1,0 +1,48 @@
+# sqrt-aprox
+
+Resumo: O foco deste programa é a implementação em C de soluções heurísticas usando séries-p para avaliar f(x) = sqrt(). Todo isso é para um projeto de engenharia.
+
+
+## Algumas series para inspirar o código ( series para se fazer aproximações)
+
+
+As series, em ordem:
+  * (I) Minha própria série na qual eu achei com minhas mãos antes de uma estranha notíca... (não era necessário)
+  * (II) A serie que Prof. Sávio nos forneceu como base.
+  * (III) A segunda aproximação nós podemos ver na plataforma de matemática comptacional: [wolfram](http://www.wolframalpha.com/share/clip?f=d41d8cd98f00b204e9800998ecf8427ek7hsa4aeht) ! [*2*]
+
+##  Observaçõoes	
+  * Aqui encontra-se uma documentação sobre a notação de Pochhammer  denotada nas séries (II) e (III): [*Pochhammer Symbol*](http://mathworld.wolfram.com/PochhammerSymbol.html)
+    1. (II)  [*Falling Factorial*](http://mathworld.wolfram.com/RisingFactorial.html)
+    2. (III) [*Rising Factorial*](http://mathworld.wolfram.com/FallingFactorial.html)
+
+## Histórico
+
+Nós temos um problema com a divergÊncia do resultado de saidas com entradas de  __**n** > 2__. É frustrante. Para isso, o foco do problema será restringir a entrada para um valor fixo z = 50 e depois disso transformá-lo em: _**z**^(1/2) -> **k**(1 + **x**)^(1/2)_. Em outras palavras, nós precisamos fatorar _√50 -> 5√2_!; algumas coisas foram feitas em Python como protótipo para solução, mas a implementação deve ser em C ANSI!
+
+
+## Credits
+
+Contributors:
+  * Me (Manoel Vilela)
+  * Gabriel Giordano (guest)
+  * Janderson Souza
+  * Núria Rocha
+  * Júliana Azevedo
+  * Jeanderson Oliveira
+
+## License
+
+GPL
+
+## Roadmap
+  - [X] Estrutura do algoritmo e ideias básicas para implementação
+  - [X] Construir a função em C da qual retorna a forma fatorada da raíz quadrada 
+  - [X] Implementação de uma serie conveniente (nós implementamos as três)
+  - [X] Testar séries sobre sua convergência em uma entrada (o prototipo dos foi feito)
+  - [X] Fazer os testes que nosso querido professor quer (estimativa de erro)
+  - [X] Discobrir o bug-enigma na implementçaão em da divergência que ocorre nas três séries
+    - [X] Corrigido a implementação da serie (I) -> *man_serie()*
+    - [X] Corrigido a implementação da serie (II) *sav_serie()*
+    - [X] Corrigido a implementação da serie (III) -> *wolf_serie()*
+  - [X] Corrigir todas as divergência das séries sobre suas implementações!
