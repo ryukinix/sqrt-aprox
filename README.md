@@ -43,7 +43,7 @@ Contributors:
 
 ## License
 
-GPL License
+GPL
 
 ## Roadmap
   - [X] Structure of algorithm and basic ideas to implement
