@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <stdbool.h>
 #include <math.h>
-#include "declarations.h"
 #define SLICES 8
 
 int isprime(int a){
@@ -18,9 +17,6 @@ int factor(int x, int *inside, int *outside){
 	
 	if (isprime(x) != 1){
 		while (x != 1){
-			// if (x % prime == 0) (debug)
-			// 	printf("%d\t| %d\n", x, prime);
-		
 			if (x % prime == 0){
 				x /= prime;
 				tmp++;
@@ -40,7 +36,6 @@ int factor(int x, int *inside, int *outside){
 				*inside *= prime;
 		}
 		*inside /= *outside;
-		//printf("%d\t| /\n\n", x); (debug)
 	}
 	else
 		return -1;
@@ -48,6 +43,7 @@ int factor(int x, int *inside, int *outside){
 	return 0;
 }
 
+//for debug factor
 void output_print(int value, int status, int inside, int outside){
 	if (status == -1)
 		printf("%d is prime\n", value);
@@ -59,22 +55,6 @@ void output_print(int value, int status, int inside, int outside){
 		printf("    __\n%d \\/%d\n", outside, inside);
 	
 }
-
-/*
-
-int main(){
-	int value, outside  = 1, inside = 1;
-	scanf("%d", &value);
-
-	int status = factor(value, &inside, &outside);
-
-	output_print(value, status, inside, outside)
-	
-	return 0;
-}
-*/
-
-
 
 
 long fact(int n){
