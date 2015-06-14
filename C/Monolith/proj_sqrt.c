@@ -9,7 +9,7 @@
  *
  *       Filename:  proj.c
  *
- *    Description: A heuristic solution for eval the sqrt(x) function
+ *    Description:  A heuristic solution for eval the sqrt(x) function
  *
  *        Version:  1.0
  *        Created:  5-06-2015 06:03:58
@@ -18,7 +18,7 @@
  *
  *        Authors:  Manoel Vilela, Janderson Souza, Juliana Azevedo, Jeanderson Oliveira, Núria Rocha
  *   Organization:  UFPA -> Federal University of Para
- *        Contact:
+ *        Contact:  manoel_vilela@mail.com
  *
  * ===================================================================================================
  */
@@ -32,16 +32,17 @@
  *
  *    -*- Declaration Sets -*-
  *
- *	isprime: ℕ* → {0, 1
+ *	isprime: ℕ* → {0, 1}
  *
  *
  *	  -*- Definition -*-
+ *
  *  isprime: a ↦ {true, false}
  *
  *  E.g.: (7) ↦ (true)
  *		 (4) ↦ (false)
  *
-*/
+ */
 int isprime(int a){
 	int i;
 	for (i = 2; i < a; i++)
