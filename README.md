@@ -9,14 +9,14 @@ __*Abstract*__: The coding focus is a implementation in C of heuristics solution
 
 
 In order the series:
-  * _(I)_ My own series whose i found with my hands before an odd notice... (would not necessary)
-  * _(II)_ The series than Prof. Sávio give us and Gabriel it's not a her fan [*1*]
+  * _(I)_ The series than Prof. Sávio give us and Gabriel it's not a her fan [*1*] 
+  * _(II)_ My own series whose i found with my hands before an odd notice... (would not necessary)
   * _(III)_ The second series approximation we see in platform of mathematics [wolfram](http://www.wolframalpha.com/share/clip?f=d41d8cd98f00b204e9800998ecf8427ek7hsa4aeht) ! [*2*]
 
 ##  Observations
-  * Here is a documentation about of rising factorial, whose the notation of *Pochhammer* for denote in series (II) and (III): [*Pochhammer Symbol*](http://mathworld.wolfram.com/PochhammerSymbol.html)
-    1. (II)  [*Falling Factorial*](http://mathworld.wolfram.com/RisingFactorial.html)
-    2. (III) [*Rising Factorial*](http://mathworld.wolfram.com/FallingFactorial.html)
+  * Here is a documentation about of rising factorial, whose the notation of *Pochhammer* for denote in series (I) and (III): [*Pochhammer Symbol*](http://mathworld.wolfram.com/PochhammerSymbol.html)
+    1. (I)  [*Rising Factorial*](http://mathworld.wolfram.com/RisingFactorial.html)
+    2. (III) [*Falling Factorial*](http://mathworld.wolfram.com/FallingFactorial.html)
 
 ## Contributing
 
