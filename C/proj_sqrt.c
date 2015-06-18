@@ -17,7 +17,7 @@
  *       Compiler:  gcc
  *
  *        Authors:  Manoel Vilela, Janderson Souza, Juliana Azevedo, Jeanderson Oliveira, Núria Rocha
- *   Organization:  UFPA -> Federal University of Para
+ *   Organization:  UFPA  → Federal University of Para
  *        Contact:  manoel_vilela@mail.com
  *
  * ===================================================================================================
@@ -156,7 +156,7 @@ double sav_serie(double x){
 		double slice = (productory * pot)/denominator;
 
 		//output
-		printf("Slice %d: %lf <=> (* %lf * %lf) / %li\n", \
+		printf("Slice %d: %lf <=> (* %lf * %.2lf) / %li\n", \
 			n, slice, productory, pot, denominator);
 
 		accumulator += slice;
@@ -188,7 +188,7 @@ double man_serie(double x){
 		double slice = (sign * productory * pot)/denominator;
 
 		//output
-		printf("Slice %d: %lf <=> (%d * %lf * %lf) / %li\n" , \
+		printf("Slice %d: %lf <=> (%d * %lf * %.2lf) / %li\n" , \
 			n, slice, sign, productory, pot, denominator);
 
 		accumulator += slice;
@@ -216,7 +216,7 @@ double wolf_serie(double x){
 		double slice = (sign * productory * pot)/denominator;
 
 		//debug
-		printf("Slice %d: %lf <=> (%d * %lf * %lf) / %li\n", \
+		printf("Slice %d: %lf <=> (%d * %lf * %.2lf) / %li\n", \
 			n, slice, sign, productory, pot, denominator);
 
 		accumulator += slice;
