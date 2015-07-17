@@ -1,21 +1,46 @@
 #!/usr/bin/env python3
-#coding=utf-8
-#fatorial
+# coding=utf-8
+from __future__ import division
 from functools import reduce
 from math import sqrt
 
-f = lambda x: reduce(lambda a,b:a*b, [i for i in range(1, x + 1)] + [1])
-#produtorio entre impars na sequencia 1, 1, 3, 5, 7...
-p_impar = lambda x: reduce(lambda a, b: a*b, (abs(2*k + 1) for k in range(-1, x-1)))
-#aproximação da raiz quadrada usando expansão da série de taylor
-expr1 = lambda x, n: float((((-1)**(int(n)+1))*((x - 1)**n)*p_impar(int(n)))/((2.0**n)*f(int(n))))  #preciso revisar, alguma expressão estar errada
-#pices
-slices = lambda x: [expr1(float(x), float(n)) for n in range(1, 7)]
-for i in slices(2):
-	print(i)
 
-sqrt_ = lambda x: 1 + sum(slices(x)) #funciona que é uma maravilha para o número 2.
-i = 2
-print("my: √%d = %2.10f" %(i, sqrt_(i)))
-print("python: √%d = %2.10f" %(i, sqrt(i)))
-print("sqrt - sqrt_ = %2.10f" %(abs(sqrt(i) - sqrt_(i))))
+def factorial(x):
+    return reduce(lambda a, b: a*b, [i for i in range(1, x + 1)] + [1])
+
+
+# productory beteween odd numbers on the sequence: 1, 1, 3, 5, 7...
+def p_odd(x):
+    return reduce(lambda a, b: a*b, (abs(2*k + 1) for k in range(-1, x-1)))
+
+
+# aproximation of the square root using the fourier serie expansion
+def expr1(x, n):
+    numerator = (((-1)**(n + 1))*((x - 1)**n))*p_odd(int(n))
+    denominator = (2**n) * factorial(n)
+    return numerator/denominator
+
+
+# pices of the serie
+def slices(x):
+    return [expr1(x, n) for n in range(1, 7)]
+
+
+# function aproximation abstraction
+def _sqrt(x):
+    return 1 + sum(slices(x))
+
+
+def main():
+    test = 2
+    # print the slices
+    for i in slices(test):
+        print(i)
+
+    print("my: √%d = %2.10f" % (test, sqrt_(test)))
+    print("python: √%d = %2.10f" % (test, sqrt(test)))
+    print("sqrt - sqrt_ = %2.10f" % (abs(sqrt(test) - sqrt_(test))))
+
+
+if __name__ == '__main__':
+    main()
