@@ -9,14 +9,16 @@ __*Abstract*__: The coding focus is a implementation in C of heuristics solution
 
 
 In order the series:
-  * _(I)_ The series than Prof. Sávio give us and Gabriel it's not a her fan [*1*] 
-  * _(II)_ My own series whose i found with my hands before an odd notice... (would not necessary)
-  * _(III)_ The second series approximation we see in platform of mathematics [wolfram](http://www.wolframalpha.com/share/clip?f=d41d8cd98f00b204e9800998ecf8427ek7hsa4aeht) ! [*2*]
+
+* _(I)_ The series than Prof. Sávio give us and Gabriel it's not a her fan [*1*] 
+* _(II)_ My own series whose i found with my hands before an odd notice... (would not necessary)
+* _(III)_ The second series approximation we see in platform of mathematics [wolfram](http://www.wolframalpha.com/share/clip?f=d41d8cd98f00b204e9800998ecf8427ek7hsa4aeht) ! [*2*]
 
 ##  Observations
-  * Here is a documentation about of rising factorial, whose the notation of *Pochhammer* for denote in series (I) and (III): [*Pochhammer Symbol*](http://mathworld.wolfram.com/PochhammerSymbol.html)
-    1. (I)  [*Rising Factorial*](http://mathworld.wolfram.com/RisingFactorial.html)
-    2. (III) [*Falling Factorial*](http://mathworld.wolfram.com/FallingFactorial.html)
+
+* Here is a documentation about of rising factorial, whose the notation of *Pochhammer* for denote in series (I) and (III): [*Pochhammer Symbol*](http://mathworld.wolfram.com/PochhammerSymbol.html)
+  1. (I)  [*Rising Factorial*](http://mathworld.wolfram.com/RisingFactorial.html)
+  2. (III) [*Falling Factorial*](http://mathworld.wolfram.com/FallingFactorial.html)
 
 ## Contributing
 
@@ -34,25 +36,27 @@ We have a problem with the diverge output results of input values __**n** > 2__.
 ## Credits
 
 Contributors:
-  * Me (Manoel Vilela)
-  * Gabriel Giordano (guest)
-  * Janderson Souza
-  * Núria Rocha
-  * Júliana Azevedo
-  * Jeanderson Oliveira
+
+* Me (Manoel Vilela)
+* Gabriel Giordano (guest)
+* Janderson Souza
+* Núria Rocha
+* Júliana Azevedo
+* Jeanderson Oliveira
 
 ## License
 
-GPL
+[GPL](LICENSE)
 
 ## Roadmap
-  - [X] Structure of algorithm and basic ideas to implement
-  - [X] Construct the function in C to return the form square root factored 
-  - [X] Implementation of a series convenient (i did implement three!)
-  - [X] Test series of your convergence in an input (the prototype of tests was made)
-  - [X] Do the tests that our **beloved** professor wants (error estimative)
-  - [X] Discover the bug-enigma in implementation on C of the three series divergence.
-    - [X] Fix the (I) series implementation -> *man_serie()*
-    - [X] Fix the (II) series implementation -> *sav_serie()*
-    - [X] Fix the (III) series implementation -> *wolf_serie()*
-  - [X] Fix all the divergence of the series in implementation!
+
+- [X] Structure of algorithm and basic ideas to implement
+- [X] Construct the function in C to return the form square root factored 
+- [X] Implementation of a series convenient (i did implement three!)
+- [X] Test series of your convergence in an input (the prototype of tests was made)
+- [X] Do the tests that our **beloved** professor wants (error estimative)
+- [X] Discover the bug-enigma in implementation on C of the three series divergence.
+  - [X] Fix the (I) series implementation -> *man_serie()*
+  - [X] Fix the (II) series implementation -> *sav_serie()*
+  - [X] Fix the (III) series implementation -> *wolf_serie()*
+- [X] Fix all the divergence of the series in implementation!
